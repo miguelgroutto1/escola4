@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.Container {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: red;
+  background: linear-gradient(to bottom, #cccccc, #333333);
+  background-image: url(../sumario/fundo_lousa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.Corpo {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background-color: #ffffff;
+}
+.Disciplina {
+  position: relative;
+  float: left;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 75px;
+  z-index: 2;
+
+  background-color: #33ccff;
+  background-image: linear-gradient(to right, #4c6c81, #ffffff);
+  background-image: url(../sumario/fundo_info.jpg);
+}
+
+disciplina p,
+h1 {
+  margin: 0;
+  position: absolute; /* 2 */
+  top: 50%; /* 3 */
+  transform: translate(0, -50%); /* 4 */
+  font-family: "Comic Sans MS", cursive;
+  margin-left: 15px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: #ccc;
+}
+
+.Titulo {
+  position: relative;
+  float: left;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+  background-image: linear-gradient(to right, #4c6c81, #083263);
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+Titulo p,
+h2 {
+  margin: 0;
+  position: absolute; /* 2 */
+  top: 50%; /* 3 */
+  transform: translate(0, -50%); /* 4 */
+  font-family: "Comic Sans MS", cursive;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.Conteudo {
+  position: relative;
+  float: left;
+  left: 0%;
+  width: 100%;
+  height: Calc(100% - 175px);
+  z-index: 2;
+  background-color: #ffff;
+  color: #333;
+  overflow: auto;
+}
+
+div.Conteudo h3 {
+  font-family: "Comic Sans MS", cursive;
+  color: #333333;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+  background: #f90;
+  background-image: linear-gradient(to right, #d2b48c, #ffffff);
+}
+
+div.Conteudo p {
+  color: #333;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+div.Conteudo a:link,
+a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 15px 15px;
+  transition: 1.0s;
+}
+
+div.Conteudo a:hover,
+a:active {
+  background-color: rgb(202, 20, 20);
+  transition: 1s;
+}
+
+.Rodape {
+  position: relative;
+  float: left;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+  background-image: linear-gradient(to right, #4c6c81, #cccccc);
+}
+
+.btn_home {
+  font-size: 24px;
+  float: right;
+  color: #fff;
+  position: relative; /* 2 */
+  top: 50%; /* 3 */
+  transform: translate(0, -50%); /* 4 */
+  margin-right: 10px;
+  width: 30px;
+  text-align: center;
+}
+
+div.btn_home a:link {
+  color: #0f0;
+  text-decoration: none;
+}
+div.btn_home a:visited {
+  text-decoration: none;
+  color: #0f0;
+}
+div.btn_home a:hover {
+  text-decoration: underline;
+  color: #ffff00;
+}
+div.btn_home a:active {
+  text-decoration: none;
+  color: #0f0;
+}
+
+.button_topo {
+  background-color: #008b8b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+
+@media (max-width: 414px) {
+  .Container {
+    left: 0%;
+    top: 0%;
+    width: 414px;
+    height: 896px;
+    z-index: 1;
+    background: rgb(255, 19, 19);
+  }
+  .Corpo {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 414px;
+    height: 896px;
+    z-index: 2;
+  }
+  .Disciplina {
+    position: relative;
+    float: left;
+    left: 0%;
+    top: 0%;
+    width: 414px;
+    height: 78px;
+    z-index: 2;
+    background-image: url(../sumario/fundo_info.jpg);
+  }
+
+  disciplina p,
+  h1 {
+    margin: 0;
+    position: absolute;
+    top: 49%;
+    transform: translate(0, -50%);
+    font-family: "Comic Sans MS", cursive;
+    margin-left: 15px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    color: #ccc;
+  }
+
+  .Titulo {
+    position: relative;
+    float: left;
+    left: 0%;
+    width: 414px;
+    height: 50px;
+    z-index: 2;
+    background-image: linear-gradient(to right, #4c6c81, #083263);
+    text-shadow: 0.1em 0.1em 0.2em black;
+  }
+
+  Titulo p,
+  h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: "Comic Sans MS", cursive;
+    color: #fff;
+    margin-left: 15px;
+  }
+
+  .Conteudo {
+    position: relative;
+    float: left;
+    left: 0%;
+    height: Calc(100% - 175px);
+    z-index: 2;
+    color: #333;
+    overflow: auto;
+  }
+
+  div.Conteudo h3 {
+    font-family: "Comic Sans MS", cursive;
+    color: #333333;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    background: #f90;
+    background-image: linear-gradient(to right, #d2b48c, #ffffff);
+  }
+
+  div.Conteudo p {
+    color: #333;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+  }
+
+  div.Conteudo a:link,
+  a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 1px;
+  }
+
+  div.Conteudo a:hover,
+  a:active {
+    background-color: red;
+  }
+
+  .Rodape {
+    position: relative;
+    float: left;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background-image: linear-gradient(to right, #4c6c81, #cccccc);
+  }
+
+  .btn_home {
+    font-size: 24px;
+    left: 178px;
+    float: right;
+    color: #fff;
+    position: relative; /* 2 */
+    top: 50%; /* 3 */
+    transform: translate(0, -50%); /* 4 */
+    margin-right: 10px;
+    width: 414px;
+    text-align: center;
+  }
+
+  div.btn_home a:link {
+    color: #0f0;
+    text-decoration: none;
+  }
+  div.btn_home a:visited {
+    text-decoration: none;
+    color: #0f0;
+  }
+  div.btn_home a:hover {
+    text-decoration: underline;
+    color: #3d3b3b;
+  }
+  div.btn_home a:active {
+    text-decoration: none;
+    color: #3d3b3b;
+  }
+
+  .button_topo {
+    width: 414px;
+    background-color: #008b8b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000000;
+  }
+}
